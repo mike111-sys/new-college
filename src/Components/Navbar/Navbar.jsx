@@ -53,7 +53,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="list-none mx-6 text-white text-[15px] mt-8 md:mt-0">
-          <Link to="about" smooth={true} offset={-80} duration={500}>
+          <Link to="about" smooth={true} offset={-93} duration={500}>
             About Us
           </Link>
         </li>
