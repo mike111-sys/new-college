@@ -48,12 +48,12 @@ const Navbar = () => {
         </li>
         {/* Increased margin between menu items */}
         <li className="list-none mx-6 text-white text-[15px] mt-8 md:mt-0">
-          <Link to="programs" smooth={true} offset={-210} duration={500}>
+          <Link to="programs" smooth={true} offset={-240} duration={500}>
             Programs
           </Link>
         </li>
         <li className="list-none mx-6 text-white text-[15px] mt-8 md:mt-0">
-          <Link to="about" smooth={true} offset={-93} duration={500}>
+          <Link to="about" smooth={true} offset={-97} duration={500}>
             About Us
           </Link>
         </li>
@@ -61,7 +61,7 @@ const Navbar = () => {
   <Link 
     to="contact" 
     smooth={true} 
-    offset={-210} 
+    offset={-240} 
     duration={500} 
     className="btn text-[11px] !important  md:text-[15px]"  // Setting a smaller text size
   >
