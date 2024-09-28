@@ -28,27 +28,31 @@ const Navbar = () => {
       <img
         src={menu_icon}
         alt="Menu Icon"
-        className="md:hidden w-[26px] cursor-pointer"
+        className="md:hidden w-[26px] cursor-pointer z-20"
         onClick={toggleMenu}
       />
-      <ul className={`flex md:flex-row flex-col md:items-center absolute md:static bg-[#212ea0] md:bg-transparent w-full md:w-auto transition-all duration-300 ease-in-out ${mobileMenu ? "right-0 top-16" : "-right-full top-16"} md:top-0 md:right-0 md:p-0 p-4`}>
-        <li className="list-none mx-6 text-white text-[15px]">
+      <ul className={`flex md:flex-row flex-col md:items-center fixed md:static bg-[#212ea0] md:bg-transparent h-full md:w-auto transition-all duration-300 ease-in-out
+        ${mobileMenu ? "w-[50vw] right-0 top-0" : "w-0 right-[-100vw]"} 
+        md:top-0 md:right-auto md:p-0 p-4 z-10`}>
+        {/* Added margin-top to separate first menu item from the icon */}
+        <li className="list-none mx-6 text-white text-[15px] mt-12 md:mt-0">  
           <Link to="hero" smooth={true} offset={0} duration={500}>
             Home
           </Link>
         </li>
-        <li className="list-none mx-6 text-white text-[15px]">
+        {/* Increased margin between menu items */}
+        <li className="list-none mx-6 text-white text-[15px] mt-8 md:mt-0">
           <Link to="programs" smooth={true} offset={-210} duration={500}>
             Programs
           </Link>
         </li>
-        <li className="list-none mx-6 text-white text-[15px]">
+        <li className="list-none mx-6 text-white text-[15px] mt-8 md:mt-0">
           <Link to="about" smooth={true} offset={-80} duration={500}>
             About Us
           </Link>
         </li>
-        <li className="list-none mx-6 text-white text-[15px]">
-          <Link to="contact" smooth={true} offset={-210} duration={500} className="btn">
+        <li className="list-none mx-6 text-white text-[15px] mt-8 md:mt-0">
+          <Link to="contact" smooth={true} offset={-210} duration={500} className="btn text-sm md:text-[15px]">
             Contact Us
           </Link>
         </li>
