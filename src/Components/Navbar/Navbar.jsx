@@ -57,7 +57,7 @@ const Navbar = () => {
             About Us
           </Link>
         </li>
-        <li className="list-none mx-4 text-white text-[11px] md:text-[15px] mt-8 md:mt-0">
+        <li className="list-none mx-3 text-white text-[11px] md:text-[15px] mt-8 md:mt-0">
   <Link 
     to="contact" 
     smooth={true} 
