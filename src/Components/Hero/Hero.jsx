@@ -23,7 +23,7 @@ const Hero = () => {
         </p>
         <div className="flex justify-center"> {/* Centering the button */}
           <button className="bg-blue-700 text-white px-6 py-3 rounded-full flex items-center transition duration-300 hover:bg-blue-800">
-            <Link to="programs" smooth={true} offset={-210} duration={500} className="flex items-center">
+            <Link to="programs" smooth={true} offset={-240} duration={500} className="flex items-center">
               Explore more
               <img src={arrow_icon} alt="Arrow Icon" className="ml-2 w-5 h-5" />
             </Link>

@@ -33,7 +33,7 @@ const Contact = () => {
 
   return (
     <div id="contact"  className="mx-auto my-20 max-w-[90%] flex flex-col md:flex-row md:justify-between md:items-center">
-      <div className="md:w-[48%] text-gray-600 space-y-5">
+      <div className="mb-14 md:w-[48%] text-gray-600 space-y-5">
         <h3 className="text-[25px] font-medium text-[#000f38] flex items-center mb-5">
           Send us a message
           <img src={msg_icon} alt="" className="ml-2 w-9" />
