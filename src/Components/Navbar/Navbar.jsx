@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../assets/logo_1.png";
+import edusify from "../../assets/edusify.png";
 import { Link } from "react-scroll";
 import menu_icon from "../../assets/menu-icon.png";
 
@@ -28,7 +28,13 @@ const Navbar = () => {
         sticky ? "bg-[#212ea0] transition duration-500" : "bg-transparent"
       }`}
     >
-      <img src={logo} alt="Logo" className="w-[45px] md:w-[38px]" />
+      <div className="flex flex-row">
+        <img src={edusify} alt="" className="size-7 md:size-12"/>
+        <h1 className="ml-2 mt-2 text-white text-xs md:text-base md:ml-4 md:mt-4">
+  UPPERHILL COLLEGE
+</h1>
+
+      </div>
       <img
         src={menu_icon}
         alt="Menu Icon"

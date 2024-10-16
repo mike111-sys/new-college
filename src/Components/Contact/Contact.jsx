@@ -4,6 +4,7 @@ import mail_icon from "../../assets/mail-icon.png";
 import phone_icon from "../../assets/phone-icon.png";
 import location_icon from "../../assets/location-icon.png";
 import white_arrow from "../../assets/white-arrow.png";
+import logo from "../../assets/school_logo.jpg"
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -38,12 +39,7 @@ const Contact = () => {
           Send us a message
           <img src={msg_icon} alt="" className="ml-2 w-9" />
         </h3>
-        <p className="max-w-[450px] leading-relaxed">
-          Feel free to reach out through the contact form or find our contact
-          information below. Your feedback, questions, and suggestions are
-          important to us as we strive to provide exceptional service to our
-          college community.
-        </p>
+      <img src={logo} alt="school-logo" className="w-auto h-52 "/>
         <ul className="space-y-5">
           <li className="flex items-center">
             <img src={mail_icon} alt="" className="w-6 mr-2" />
